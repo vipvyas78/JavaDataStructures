@@ -10,7 +10,7 @@ public class Main {
         intArray[2] = 2;
         intArray[3] = 5;
         intArray[4] = -10;
-        intArray[5] = 20;
+        intArray[5] = 5;
         int i;
 
             int index = -1;
