@@ -12,6 +12,8 @@ public class Main {
         intArray[4] = -10;
         intArray[5] = 5;
         int i;
+        int[] sortedArrayBubble;
+        int[] sortedArraySelection;
 
             int index = -1;
 /* BigO notation for the below step will be using worst case scenario . Linear time complexity as it varies with the index where the position is found.
@@ -32,17 +34,27 @@ public class Main {
             }
         }
 
-       intArray = BubbleSort.sortArray(intArray);
+       sortedArrayBubble = BubbleSort.sortArray(intArray);
+        printArray(sortedArrayBubble);
+
+
+
+
+        sortedArraySelection = SelectionSort.selectionSortArray(intArray);
+        printArray(sortedArraySelection);
+
+
+
+    }
+
+
+    public static void printArray(int[] printarray)
+    {
         System.out.println("Printing New  Array");
-        for (i=0 ; i < intArray.length; i++ )
+        for (int i=0 ; i < printarray.length; i++ )
         {
-            System.out.println(intArray[i]);
+            System.out.println(printarray[i]);
         }
-
-
-
-
-
     }
 
 }
