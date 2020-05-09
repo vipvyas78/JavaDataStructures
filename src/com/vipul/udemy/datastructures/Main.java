@@ -16,6 +16,7 @@ public class Main {
         int[] sortedArraySelection;
         int[] sortedArrayInsertion;
         int[] sortedShellSort;
+        int factorial;
 
             int index = -1;
 /* BigO notation for the below step will be using worst case scenario . Linear time complexity as it varies with the index where the position is found.
@@ -37,7 +38,7 @@ public class Main {
         }
 
 
-        sortedArrayBubble = BubbleSort.sortArray(intArray);
+       /* sortedArrayBubble = BubbleSort.sortArray(intArray);
         printArray(sortedArrayBubble);
 
         sortedArraySelection = SelectionSort.selectionSortArray(intArray);
@@ -47,7 +48,11 @@ public class Main {
         printArray(sortedArrayInsertion);
 
         sortedShellSort = ShellSort.shellSortArray(intArray);
-        printArray(sortedShellSort);
+        printArray(sortedShellSort); */
+
+        int num =7;
+        factorial = Factorial.calculateFactorial(num);
+        System.out.println("Factorial of " + num + " = "+ factorial);
 
 
 
