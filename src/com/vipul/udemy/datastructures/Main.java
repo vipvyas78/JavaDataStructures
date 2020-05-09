@@ -15,6 +15,7 @@ public class Main {
         int[] sortedArrayBubble;
         int[] sortedArraySelection;
         int[] sortedArrayInsertion;
+        int[] sortedShellSort;
 
             int index = -1;
 /* BigO notation for the below step will be using worst case scenario . Linear time complexity as it varies with the index where the position is found.
@@ -35,17 +36,16 @@ public class Main {
             }
         }
 
-       sortedArrayBubble = BubbleSort.sortArray(intArray);
+       /*sortedArrayBubble = BubbleSort.sortArray(intArray);
         printArray(sortedArrayBubble);
-
-
-
 
         sortedArraySelection = SelectionSort.selectionSortArray(intArray);
         printArray(sortedArraySelection);
 
         sortedArrayInsertion = InsertionSort.doInsertionSort(intArray);
-        printArray(sortedArrayInsertion);
+        printArray(sortedArrayInsertion); */
+
+        sortedShellSort = ShellSort.shellSortArray(intArray);
 
 
 
