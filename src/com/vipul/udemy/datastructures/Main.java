@@ -53,6 +53,8 @@ public class Main {
         int num =7;
         factorial = Factorial.calculateFactorial(num);
         System.out.println("Factorial of " + num + " = "+ factorial);
+        factorial = RecursiveFactorial.recFactorial(num);
+        System.out.println("Factorial of " + num + " = "+ factorial);
 
 
 
