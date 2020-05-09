@@ -36,16 +36,18 @@ public class Main {
             }
         }
 
-       /*sortedArrayBubble = BubbleSort.sortArray(intArray);
+
+        sortedArrayBubble = BubbleSort.sortArray(intArray);
         printArray(sortedArrayBubble);
 
         sortedArraySelection = SelectionSort.selectionSortArray(intArray);
         printArray(sortedArraySelection);
 
         sortedArrayInsertion = InsertionSort.doInsertionSort(intArray);
-        printArray(sortedArrayInsertion); */
+        printArray(sortedArrayInsertion);
 
         sortedShellSort = ShellSort.shellSortArray(intArray);
+        printArray(sortedShellSort);
 
 
 

@@ -7,17 +7,17 @@ public class ShellSort {
     public static int[] shellSortArray(int[] origArray )
     {
        int[]  gaparray =  getGapValue(origArray.length);
-       Main.printArray(origArray);
+      // Main.printArray(origArray);
        for ( int i=gaparray.length; i >0; i--) {
 
             if (gaparray[i-1] == 0 )
                 continue;
             else
             {
-             System.out.println("gapInsertionSort = " + gaparray[i-1]);
+             //System.out.println("gapInsertionSort = " + gaparray[i-1]);
 
                 origArray = gapInsertionSort(origArray,(int) gaparray[i-1]);
-                Main.printArray(origArray);
+                //Main.printArray(origArray);
             }
         }
         return origArray;
@@ -25,14 +25,14 @@ public class ShellSort {
 
     public static int[] gapInsertionSort(int[] unSortedArray, int gap)
     {
-        System.out.println(" Gap  = " + gap);
+        //System.out.println(" Gap  = " + gap);
 
 
         for (int i =gap ; i < unSortedArray.length ; i+=gap )
         {
             int insertionElement = unSortedArray[i] ;
-            System.out.println("i="+i);
-            System.out.println( "insertion Element = " + insertionElement);
+            //System.out.println("i="+i);
+            //System.out.println( "insertion Element = " + insertionElement);
             int j = i;
             while( j >= gap && unSortedArray[j-gap] >insertionElement)
             {
