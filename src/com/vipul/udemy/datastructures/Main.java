@@ -32,14 +32,15 @@ public class Main {
             }
         }
 
+       intArray = BubbleSort.sortArray(intArray);
+        System.out.println("Printing New  Array");
+        for (i=0 ; i < intArray.length; i++ )
+        {
+            System.out.println(intArray[i]);
+        }
 
-    intArray = BubbleSort.swap(intArray, 2,10 );
-    i =0;
-      System.out.println("Printing Swapped Array");
-    for (i=0 ; i < intArray.length; i++ )
-    {
-        System.out.println(intArray[i]);
-    }
+
+
 
 
     }
