@@ -3,7 +3,7 @@ package com.vipul.udemy.datastructures;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
         int[] intArray = new int[6];
         intArray[0] = 3;
         intArray[1] = -1;
@@ -16,8 +16,10 @@ public class Main {
         int[] sortedArraySelection;
         int[] sortedArrayInsertion;
         int[] sortedShellSort;
+        int[] sortedMergeArray;
+        int factorial;
 
-            int index = -1;
+        int index = -1;
 /* BigO notation for the below step will be using worst case scenario . Linear time complexity as it varies with the index where the position is found.
     Retrieving without Index is  a time complexity of O(n)
     Add an element to full Array  == 0(n)
@@ -26,10 +28,8 @@ public class Main {
  */
 
 
-        for(i=0; i < intArray.length ; i++)
-        {
-            if( intArray[i] == 5)
-            {
+        for (i = 0; i < intArray.length; i++) {
+            if (intArray[i] == 5) {
                 index = i;
                 System.out.println("index = " + index);
                 break;
@@ -37,7 +37,7 @@ public class Main {
         }
 
 
-        sortedArrayBubble = BubbleSort.sortArray(intArray);
+       /* sortedArrayBubble = BubbleSort.sortArray(intArray);
         printArray(sortedArrayBubble);
 
         sortedArraySelection = SelectionSort.selectionSortArray(intArray);
@@ -47,13 +47,18 @@ public class Main {
         printArray(sortedArrayInsertion);
 
         sortedShellSort = ShellSort.shellSortArray(intArray);
+        printArray(sortedShellSort); */
+
+        int num = 7;
+        factorial = Factorial.calculateFactorial(num);
+        System.out.println("Factorial of " + num + " = " + factorial);
+        factorial = RecursiveFactorial.recFactorial(num);
+        System.out.println("Factorial of " + num + " = " + factorial);
+
+        sortedShellSort= QuickSort.quickSort(intArray, 0, intArray.length);
         printArray(sortedShellSort);
 
-
-
-
     }
-
 
     public static void printArray(int[] printarray)
     {
