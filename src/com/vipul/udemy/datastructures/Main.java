@@ -6,16 +6,17 @@ public class Main {
 	// write your code here
         int[] intArray = new int[6];
         intArray[0] = 3;
-        intArray[1] = -1;
-        intArray[2] = 2;
-        intArray[3] = 7;
-        intArray[4] = -10;
+        intArray[1] = 4;
+        intArray[2] = 9;
+        intArray[3] = 8;
+        intArray[4] =3;
         intArray[5] = 5;
         int i;
         int[] sortedArrayBubble;
         int[] sortedArraySelection;
         int[] sortedArrayInsertion;
         int[] sortedShellSort;
+        int[] sortedCountingSort;
 
             int index = -1;
 /* BigO notation for the below step will be using worst case scenario . Linear time complexity as it varies with the index where the position is found.
@@ -49,7 +50,8 @@ public class Main {
         sortedShellSort = ShellSort.shellSortArray(intArray);
         printArray(sortedShellSort);
 
-
+sortedCountingSort = CountingSort.doCountingSort(intArray,9,3);
+printArray(sortedCountingSort);
 
 
     }
